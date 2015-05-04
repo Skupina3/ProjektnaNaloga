@@ -33,7 +33,23 @@ switch ($pravice)
 {
 case 'admin':
 	{
-	echo'<form action="insert.php" method="post">
+	echo'
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="User">
+	<input type="submit" value=" Posodobi uporabnika "/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Lastnik">
+	<input type="submit" value=" Posodobi lastnika "/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Izvajalec">
+	<input type="submit" value=" Posodobi izvajalca "/><br />
+	</form>
+	
+	<form action="insert.php" method="post">
 	<input type="hidden" name="insert" value="User">
 	<input type="submit" value=" Nov uporabnik "/><br />
 	</form>
@@ -154,7 +170,18 @@ case 'admin':
 	<form action="select.php" method="post">
 	<input type="hidden" name="select" value="Tarifaavtomobil">
 	<input type="submit" value=" Pregled Tarif	"/><br />
-	</form>';
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Cenik">
+	<input type="submit" value=" Cenik"/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Avtomobil">
+	<input type="submit" value=" Posodobi avtomobil"/><br />
+	</form>
+	';
 	break;
 	}
 	case 'izvajalec':
@@ -223,7 +250,27 @@ case 'admin':
 	<form action="select.php" method="post">
 	<input type="hidden" name="select" value="Tarifaavtomobil">
 	<input type="submit" value=" Pregled Tarif	"/><br />
-	</form>';
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Taksimeter">
+	<input type="submit" value=" Posodobi taksimeter "/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Delavec">
+	<input type="submit" value=" Posodobi delaveca "/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Tarifaavtomobil">
+	<input type="submit" value=" Posodobi tarifo "/><br />
+	</form>
+	
+	<form action="update.php" method="post">
+	<input type="hidden" name="update" value="Vgradnjakontrola">
+	<input type="submit" value=" Posodobi vgradnja kontrola "/><br />
+	';
 	break;
 	}
 	case 'ministri':
